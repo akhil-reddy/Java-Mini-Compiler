@@ -1,0 +1,18 @@
+a=10
+b=60
+k=4
+reg=0
+age=20
+t0=k+8
+ifFalse t0 goto l1
+age=3455
+goto l2
+l1:goto l3
+l2:age=3
+l3:i=0
+l4:ifFalse i<100 goto l5
+i=i+1
+t2=88*i
+NULL=t2
+goto l4 
+l5:age=30

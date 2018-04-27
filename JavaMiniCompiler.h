@@ -1,0 +1,28 @@
+struct SymbolTable{
+	int id;
+	char* name;
+	char* type;
+	char* datatype;
+	char* parameterlist;
+	int line_no;
+	int scopeDepth;
+	int value;
+}*table;
+//typedef struct SymbolTable abc;
+int line_no;
+int flag,paramflag,no_of_entries,currScopeDepth,typeflag,libFlag;
+char* prevType,param;
+char* prevDataType=NULL;
+char* buff=NULL;
+int n_param=0;
+int tablepointer = 100;
+int hash(char*);
+int genKeyword(char*,char*);
+int genSpecialFunctions(char*,char*);
+char* concat(char*,char*);
+int addEntry(char*,char*,char*,int);
+void addParam(char*);
+void addValue(int);
+void newScope();
+void exitScope();
+char* removeMidSpaces(char* yytext);
